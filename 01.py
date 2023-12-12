@@ -1,5 +1,5 @@
 import re
-lines=open("1.txt").read().split()
+lines=open("01.txt").read().split()
 d={str(ii):ii for ii in range(10)}
 digits = ['zero','one','two','three','four','five','six','seven','eight','nine','ten']
 d.update({dig:ii for ii,dig in enumerate(digits)}) # part B only

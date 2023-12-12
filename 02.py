@@ -1,5 +1,5 @@
 import re
-ls=open("2.txt").read().split('\n')
+ls=open("02.txt").read().split('\n')
 mlai=[('red',12),('green',13),('blue',14)]
 
 res=0

@@ -1,5 +1,5 @@
-# l=open("6.txt").read().split() # part A
-l=open("6.txt").read().replace(" ","").replace(":"," ").split() # part B
+# l=open("06.txt").read().split() # part A
+l=open("06.txt").read().replace(" ","").replace(":"," ").split() # part B
 res=1
 for t,d in zip(l[1:],l[len(l)//2+1:]):
     t=int(t); d=int(d)

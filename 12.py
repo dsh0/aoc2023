@@ -5,7 +5,7 @@ for l in ls:
     pat,seq=l.split()
     pat="?".join([pat]*5) # part B only
     pat+="."
-    seq=np.array([int(x) for x in seq.split(',')])
+    seq=np.fromstring(seq,dtype=int,sep=',')
     seq=np.tile(seq,5) # part B only
     vec=np.zeros((len(pat)+1, len(seq)+1),dtype=int)
     vec[0,0]=1
