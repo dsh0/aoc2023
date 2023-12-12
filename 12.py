@@ -20,7 +20,7 @@ for l in ls:
             continue # in that case pat[::ii] cannot end with '.' so vec[ii+1,:]=0
         vec[ii+1]+=vec[ii] #  counts solutions where pat[ii]=='.' && pat[ii-1]=='.' after assignments of ?s
         for jj,l in enumerate(seq):
-            if '.' not in pat[ii-l:ii]:
+            if ii>=l and '.' not in pat[ii-l:ii]:
                 vec[ii+1,jj+1]+=vec[ii-l,jj] #  counts solutions where pat[ii]=='.' && all(pat[ii-l:ii]=='#')
     res+=vec[-1,-1]
 print(res)
