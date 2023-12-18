@@ -19,7 +19,7 @@ def dijkstra(A,min_steps,max_steps):
                 if min(xy0)<0 or max(xy0)>=L:
                     break
                 val0+=int(A[xy0[0]][xy0[1]])
-                if ii>=min_steps:
+                if ii>=min_steps and not visited[*xy0,1-dim]:
                     heappush(heap,(val0,(*xy0,1-dim)))
 
 A=[*open("17.txt")]
