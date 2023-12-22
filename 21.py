@@ -36,9 +36,3 @@ substract = ((t%2==1)*(65<t)).sum()
 add = ((0<=t2)&(t2<=64)&(t2%2==0)).sum()
 result = even*B**2 + odd*(B+1)**2 - (B+1)*substract + B*add
 print(result)
-
-
-
-
-
-
